@@ -128,4 +128,16 @@ Select * From(
 SELECT Entity AS Country, YEAR, Schizophrenia,
 ROW_NUMBER() OVER(PARTITION BY Year ORDER BY Schizophrenia DESC) AS Rank_number
 FROM Dataset) as subquery
-Where Rank_number = '4'
+Where Rank_number = '4';
+
+-- Stored procedures
+
+--To select based on the country
+EXEC selectcountry  @Country = 'Canada'
+
+
+--To select based on the country and year
+EXEC SelectYearwise  @Country = 'Canada', @for_year = 2010;
+
+
+EXEC Ranks  @for_year = 2018, @parameter = Schizophrenia, @ranknumber = 5;
