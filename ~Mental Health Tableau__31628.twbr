@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20241.24.0308.0326                               -->
-<workbook original-version='18.1' source-build='2024.1.1 (20241.24.0308.0326)' source-platform='win' version='18.1' xml:base='https://vizhub' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2024.1.1 (20241.24.0308.0326)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
@@ -25,7 +25,7 @@
     <WorksheetBackgroundTransparency />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location derived-from='https://public.tableau.com/workbooks/MentalHealth_17138208713570?rev=1.2' id='MentalHealth_17138208713570' path='/workbooks' revision='1.3' />
+  <repository-location derived-from='https://public.tableau.com/workbooks/MentalHealth_17138208713570?rev=1.2' id='MentalHealth_17138208713570' path='/workbooks' revision='1.7' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -38,8 +38,8 @@
   <datasources>
     <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
       <aliases enabled='yes' />
-      <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Anxiety Disorder&quot;'>
-        <calculation class='tableau' formula='&quot;Anxiety Disorder&quot;' />
+      <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bipolar Disorder&quot;'>
+        <calculation class='tableau' formula='&quot;Bipolar Disorder&quot;' />
         <members>
           <member value='&quot;Anxiety Disorder&quot;' />
           <member value='&quot;Bipolar Disorder&quot;' />
@@ -77,7 +77,7 @@
             <connection class='textscan' directory='C:/Users/rimpl/Downloads' filename='burden-disease-from-each-mental-illness.csv' server='' workgroup-auth-mode='as-is' />
           </named-connection>
           <named-connection caption='anxiety-disorders-prevalence-by-age' name='textscan.0gd7xhh1pslwsf19o12yr1ttaxxz'>
-            <connection class='textscan' directory='C:/Users/rimpl/Downloads' filename='anxiety-disorders-prevalence-by-age.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/rimpl/Downloads' filename='anxiety-disorders-prevalence-by-age.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.056khen1mm60bw1edm7i91vxldbe' name='burden-disease-from-each-mental-illness.csv' table='[burden-disease-from-each-mental-illness#csv]' type='table'>
@@ -303,12 +303,9 @@
         </groupfilter>
       </group>
       <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1ykb44j0owhz0g11qeufq1j2qdk4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/23/2024 04:14:09 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1ykb44j0owhz0g11qeufq1j2qdk4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh>
-            <refresh-event add-from-file-path='burden-disease-from-each-mental-illness' increment-value='%null%' refresh-type='create' rows-inserted='6840' timestamp-start='2024-04-23 16:14:09.414' />
-          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>Entity</remote-name>
@@ -323,7 +320,6 @@
               <approx-count>244</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burden-disease-from-each-mental-illness.csv_BBFD8C4BA44840EE8A941A17A9F99EFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Code</remote-name>
@@ -338,7 +334,6 @@
               <approx-count>220</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burden-disease-from-each-mental-illness.csv_BBFD8C4BA44840EE8A941A17A9F99EFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year</remote-name>
@@ -352,7 +347,6 @@
               <aggregation>Year</aggregation>
               <approx-count>30</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burden-disease-from-each-mental-illness.csv_BBFD8C4BA44840EE8A941A17A9F99EFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>DALYs from depressive disorders per 100,000 people in, both sexes aged age-standardized</remote-name>
@@ -366,7 +360,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>6840</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burden-disease-from-each-mental-illness.csv_BBFD8C4BA44840EE8A941A17A9F99EFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>DALYs from schizophrenia per 100,000 people in, both sexes aged age-standardized</remote-name>
@@ -380,7 +373,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>6840</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burden-disease-from-each-mental-illness.csv_BBFD8C4BA44840EE8A941A17A9F99EFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>DALYs from bipolar disorder per 100,000 people in, both sexes aged age-standardized</remote-name>
@@ -394,7 +386,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>6840</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burden-disease-from-each-mental-illness.csv_BBFD8C4BA44840EE8A941A17A9F99EFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>DALYs from eating disorders per 100,000 people in, both sexes aged age-standardized</remote-name>
@@ -408,7 +399,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>6840</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burden-disease-from-each-mental-illness.csv_BBFD8C4BA44840EE8A941A17A9F99EFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>DALYs from anxiety disorders per 100,000 people in, both sexes aged age-standardized</remote-name>
@@ -422,7 +412,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>6840</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burden-disease-from-each-mental-illness.csv_BBFD8C4BA44840EE8A941A17A9F99EFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -474,8 +463,8 @@
         <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
       </semantic-values>
       <datasource-dependencies datasource='Parameters'>
-        <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Anxiety Disorder&quot;'>
-          <calculation class='tableau' formula='&quot;Anxiety Disorder&quot;' />
+        <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bipolar Disorder&quot;'>
+          <calculation class='tableau' formula='&quot;Bipolar Disorder&quot;' />
         </column>
       </datasource-dependencies>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
@@ -528,8 +517,8 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Anxiety Disorder&quot;'>
-              <calculation class='tableau' formula='&quot;Anxiety Disorder&quot;' />
+            <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bipolar Disorder&quot;'>
+              <calculation class='tableau' formula='&quot;Bipolar Disorder&quot;' />
             </column>
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.0l8k60v0tt3g1k16khkyr1ls6na9'>
@@ -547,11 +536,15 @@
             <column-instance column='[Calculation_2581125546852298753]' derivation='Sum' name='[sum:Calculation_2581125546852298753:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Year]' derivation='Month-Trunc' name='[tmn:Year:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[Tooltip (Country/Region)]'>
+            <groupfilter function='level-members' level='[Entity]' user:ui-action-filter='[Action - Line trend yearwise]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
           <filter class='categorical' column='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[none:Entity:nk]' filter-group='3'>
-            <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Austria&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[none:Entity:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[none:Entity:nk]</column>
+            <column>[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[Tooltip (Country/Region)]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -660,8 +653,8 @@
             <mapsource name='Tableau' />
           </mapsources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Anxiety Disorder&quot;'>
-              <calculation class='tableau' formula='&quot;Anxiety Disorder&quot;' />
+            <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bipolar Disorder&quot;'>
+              <calculation class='tableau' formula='&quot;Bipolar Disorder&quot;' />
             </column>
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.0l8k60v0tt3g1k16khkyr1ls6na9'>
@@ -680,7 +673,7 @@
             <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[yr:Year:ok]' filter-group='4'>
-            <groupfilter function='member' level='[yr:Year:ok]' member='2000' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[yr:Year:ok]' member='1991' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[yr:Year:ok]</column>
@@ -791,8 +784,8 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Anxiety Disorder&quot;'>
-              <calculation class='tableau' formula='&quot;Anxiety Disorder&quot;' />
+            <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bipolar Disorder&quot;'>
+              <calculation class='tableau' formula='&quot;Bipolar Disorder&quot;' />
             </column>
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.0l8k60v0tt3g1k16khkyr1ls6na9'>
@@ -890,7 +883,9 @@
           <filter class='categorical' column='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[none:Entity:nk]'>
             <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
               <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Canada&quot;' />
-              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Denmark&quot;' />
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;High Income (WB)&quot;' />
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Low Income (WB)&quot;' />
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Middle Income (WB)&quot;' />
             </groupfilter>
           </filter>
           <slices>
@@ -1146,8 +1141,8 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Anxiety Disorder&quot;'>
-              <calculation class='tableau' formula='&quot;Anxiety Disorder&quot;' />
+            <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bipolar Disorder&quot;'>
+              <calculation class='tableau' formula='&quot;Bipolar Disorder&quot;' />
             </column>
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.0l8k60v0tt3g1k16khkyr1ls6na9'>
@@ -1167,7 +1162,7 @@
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[Set 1]' />
           <filter class='categorical' column='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[yr:Year:ok]' filter-group='4'>
-            <groupfilter function='member' level='[yr:Year:ok]' member='2000' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[yr:Year:ok]' member='1991' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <shelf-sorts>
             <shelf-sort-v2 dimension-to-sort='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[none:Entity:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[sum:Calculation_2581125546852298753:qk]' shelf='rows' />
@@ -1286,8 +1281,8 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Anxiety Disorder&quot;'>
-              <calculation class='tableau' formula='&quot;Anxiety Disorder&quot;' />
+            <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bipolar Disorder&quot;'>
+              <calculation class='tableau' formula='&quot;Bipolar Disorder&quot;' />
             </column>
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.0l8k60v0tt3g1k16khkyr1ls6na9'>
@@ -1312,7 +1307,7 @@
             <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[none:Entity:nk]' filter-group='3'>
-            <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Austria&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[none:Entity:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[none:Entity:nk]</column>
@@ -1422,8 +1417,8 @@
         <datasource caption='burden-disease-from-each-mental-illness' name='federated.0l8k60v0tt3g1k16khkyr1ls6na9' />
       </datasources>
       <datasource-dependencies datasource='Parameters'>
-        <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Anxiety Disorder&quot;'>
-          <calculation class='tableau' formula='&quot;Anxiety Disorder&quot;' />
+        <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bipolar Disorder&quot;'>
+          <calculation class='tableau' formula='&quot;Bipolar Disorder&quot;' />
           <members>
             <member value='&quot;Anxiety Disorder&quot;' />
             <member value='&quot;Bipolar Disorder&quot;' />
@@ -1479,15 +1474,15 @@
           </formatted-text>
         </zone>
         <zone h='10000' id='13' is-scaled='1' param='Image/images (1).png' type-v2='bitmap' w='19438' x='875' y='-111' />
-        <zone h='80667' id='18' name='Map' show-title='false' w='38938' x='19313' y='13000' />
+        <zone h='80667' id='18' name='Map' show-title='false' w='38938' x='20000' y='14111' />
         <zone h='11000' id='19' mode='checkdropdown' name='Map' param='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[yr:Year:ok]' type-v2='filter' w='13000' x='1938' y='46889' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98222' id='30' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='36' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
                 <zone fixed-size='280' h='99778' id='3' is-fixed='true' is-scaled='1' param='Image/Background 1.jpg' type-v2='bitmap' w='100500' x='-750' y='-1111'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1519,6 +1514,15 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
+                <zone fixed-size='280' h='81111' id='7' is-fixed='true' name='Top/Bottom' w='37125' x='61313' y='13111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
                 <zone h='11000' id='19' mode='checkdropdown' name='Map' param='[federated.0l8k60v0tt3g1k16khkyr1ls6na9].[yr:Year:ok]' type-v2='filter' w='13000' x='1938' y='46889'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1528,16 +1532,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='80667' id='18' is-fixed='true' name='Map' show-title='false' w='38938' x='19313' y='13000'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='81111' id='7' is-fixed='true' name='Top/Bottom' w='37125' x='61313' y='13111'>
+                <zone fixed-size='280' h='80667' id='18' is-fixed='true' name='Map' show-title='false' w='38938' x='20000' y='14111'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1692,8 +1687,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='34' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98222' id='33' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='100000' id='40' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='39' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
                 <zone fixed-size='280' h='100222' id='3' is-fixed='true' is-scaled='1' param='Image/Backgroung 2.jpg' type-v2='bitmap' w='100188' x='125' y='333'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1834,8 +1829,8 @@
         <datasource caption='burden-disease-from-each-mental-illness' name='federated.0l8k60v0tt3g1k16khkyr1ls6na9' />
       </datasources>
       <datasource-dependencies datasource='Parameters'>
-        <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Anxiety Disorder&quot;'>
-          <calculation class='tableau' formula='&quot;Anxiety Disorder&quot;' />
+        <column caption='Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bipolar Disorder&quot;'>
+          <calculation class='tableau' formula='&quot;Bipolar Disorder&quot;' />
           <members>
             <member value='&quot;Anxiety Disorder&quot;' />
             <member value='&quot;Bipolar Disorder&quot;' />
@@ -1898,8 +1893,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98222' id='36' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='100000' id='43' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='42' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
                 <zone fixed-size='280' h='99444' id='7' is-fixed='true' is-scaled='1' param='Image/Background 3.jpg' type-v2='bitmap' w='99813' x='0' y='1889'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2069,20 +2064,20 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='10' />
+      <active id='9' />
       <simple-id uuid='{0722AF29-5F5C-46D8-A464-9AAC11A9BD87}' />
     </window>
-    <window class='dashboard' maximized='true' name='Countrywise'>
+    <window class='dashboard' name='Countrywise'>
       <viewpoints>
         <viewpoint name='Map'>
           <zoom type='entire-view' />
         </viewpoint>
         <viewpoint name='Top/Bottom' />
       </viewpoints>
-      <active id='6' />
+      <active id='18' />
       <simple-id uuid='{D0F11FE2-1914-4A1D-9E2A-A40F60CE374A}' />
     </window>
-    <window class='dashboard' name='Metric sheet'>
+    <window class='dashboard' maximized='true' name='Metric sheet'>
       <viewpoints>
         <viewpoint name='Side by side bar'>
           <current-page>
@@ -2093,7 +2088,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='21' />
+      <active id='19' />
       <simple-id uuid='{5498CDAA-AB9A-440F-BACB-C18392A1B2AD}' />
     </window>
     <window class='worksheet' name='Metric'>
