@@ -7,6 +7,7 @@ This project is aimed at gaining insights on mental health consisting of 5 facto
 - Anxiety Disorder
 - Bipolar Disorder
 - Schizophrenia
+The link for the datast is https://ourworldindata.org/grapher/burden-disease-from-each-mental-illness
 
 After importing data in SQL, Queries were fired to get data for :
 - YoY change for different countries across the world from 1990 to 2019
