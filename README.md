@@ -10,6 +10,12 @@ This project is aimed at gaining insights on mental health consisting of 5 facto
 
 The link for the datast is https://ourworldindata.org/grapher/burden-disease-from-each-mental-illness
 
+## Tools used
+- SQL server
+- Tableau
+- SSMS
+
+
 After importing data in SQL, Queries were fired to get data for :
 - YoY change for different countries across the world from 1990 to 2019
 - Percentage change in the number of cases reported
