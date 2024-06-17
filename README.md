@@ -39,4 +39,24 @@ After importing data in SQL, Queries were fired to get data for :
  - Asian countries Taiwan, China and North Korea are towards the end for cases related to Bipolar disorder and New Zealand on the top  
  - For most of the regions over the years depression is the main mental health contributing factor.
 
+## Recommendations
 
+- Given the increasing trend, promoting awareness and early intervention is crucial.Encourage stress management techniques, mindfulness, and seeking professional help
+
+- Address stigma around mental health to facilitate open conversations
+
+- Support systems play a vital role; encourage family and friends to be understanding and patient
+
+- Promote mental health education in schools and workplaces.
+Encourage physical activity, social connections, and seeking professional help when needed.
+
+
+- Educate healthcare providers about early signs and effective interventions.Foster a supportive environment for those struggling with eating disorders
+
+- For Schizophrenia acknowledge the burden in developed nations and prioritize community-based care.Advocate for research funding to improve understanding and treatment
+
+Regional Considerations:
+
+- In African countries reporting high depression rates, invest in mental health infrastructure.
+- Collaborate globally to share best practices and resources.
+- Tailor interventions based on cultural context and local needs.
